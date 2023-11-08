@@ -52,6 +52,9 @@ try {
                 <td>
                     <a href="#">Atualizar</a>
                     <a href="">Excluir</a>
+                    <?php if ($mensagem['lida'] == 0): ?>
+                        <a href="mensagem-lida.php?id=<?php echo $mensagem['id_mensagem'] ?>">Marcar como Lida</a>
+                    <?php endif; ?>
                 </td>
             </tr>
             <?php endforeach ?>
