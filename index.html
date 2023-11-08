@@ -378,6 +378,25 @@
 
       </div>
     </section>
+    <script>
+      $(document).ready(function() {
+        // Intercepta o envio do formulário
+        $('form').submit(function(e) {
+          e.preventDefault(); // Impede o envio padrão do formulário
+      
+          // Exibe um popup de confirmação
+          var confirmation = confirm("Tem certeza de que deseja enviar sua mensagem?");
+      
+          if (confirmation) {
+            // Se o usuário confirmar, envie o formulário
+            this.submit(); // Isso enviará o formulário
+          } else {
+            // Se o usuário cancelar, não envie o formulário
+            // Você pode adicionar código adicional aqui, se necessário
+          }
+        });
+      });
+      </script>
 
   </main><!-- End #main -->
 
@@ -397,6 +416,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
 
