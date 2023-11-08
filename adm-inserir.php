@@ -12,8 +12,7 @@
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="card-body">
-                <h3 class="col md-4">Novo Administrador</h3>
+                <h3 class="md-4">Novo Administrador</h3>
                     <form action="adm-gravar.php" method="post">
                         <div class="form-group">
                             <label for="usuario">Usuário:</label>
