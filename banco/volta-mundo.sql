@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 07/11/2023 às 23:39
+-- Tempo de geração: 09/11/2023 às 04:17
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -51,7 +51,8 @@ CREATE TABLE `tb_mensagem` (
   `nome` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `assunto` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `mensagem` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `mensagem` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `lida` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -84,7 +85,7 @@ ALTER TABLE `tb_adm`
 -- AUTO_INCREMENT de tabela `tb_mensagem`
 --
 ALTER TABLE `tb_mensagem`
-  MODIFY `id_mensagem` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_mensagem` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
