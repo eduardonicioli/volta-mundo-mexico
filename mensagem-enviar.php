@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     // Consulta SQL para inserir os dados na tabela usando declaração preparada
-    $sql = "INSERT INTO tb_mensagem (nome, email, assunto, mensagem) VALUES (?,?,?,?)";
+    $sql = "INSERT INTO tb_mensagem (nome, email, assunto, mensagem, lida) VALUES (?,?,?,?,0)";
 
     // Preparar a declaração SQL
     $stmt = $conn->prepare($sql);

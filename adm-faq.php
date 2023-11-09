@@ -45,6 +45,7 @@ if (isset($_GET['marcar_lida']) && is_numeric($_GET['marcar_lida'])) {
   
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    
 
 </head>
 <body>
