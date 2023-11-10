@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 09/11/2023 às 04:17
+-- Tempo de geração: 11/11/2023 às 00:25
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -30,15 +30,16 @@ SET time_zone = "+00:00";
 CREATE TABLE `tb_adm` (
   `id` int(10) NOT NULL,
   `usuario` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `senha` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
+  `senha` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `datacad` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Despejando dados para a tabela `tb_adm`
 --
 
-INSERT INTO `tb_adm` (`id`, `usuario`, `senha`) VALUES
-(1, 'adm', '86f65e28a754e1a71b2df9403615a6c436c32c42a75a10d02813961b86f1e428');
+INSERT INTO `tb_adm` (`id`, `usuario`, `senha`, `datacad`) VALUES
+(1, 'adm', '86f65e28a754e1a71b2df9403615a6c436c32c42a75a10d02813961b86f1e428', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -79,13 +80,13 @@ ALTER TABLE `tb_mensagem`
 -- AUTO_INCREMENT de tabela `tb_adm`
 --
 ALTER TABLE `tb_adm`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `tb_mensagem`
 --
 ALTER TABLE `tb_mensagem`
-  MODIFY `id_mensagem` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_mensagem` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
